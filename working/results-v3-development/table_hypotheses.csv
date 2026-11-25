@@ -1,0 +1,5 @@
+Hipotesis,Keluarga,Metrik,n kategori,Efek [CI95],p satu sisi kategori,p dua sisi (deskriptif),p Holm,Keputusan statistik
+H1: MOG2 > Frame Difference (F piksel),algoritma,F piksel,5,"0.124 [0.013, 0.236]",0.094,0.188,0.125,tidak signifikan
+H2: KNN > Frame Difference (F piksel),algoritma,F piksel,5,"0.138 [0.037, 0.236]",0.062,0.125,0.125,tidak signifikan
+H3: Blur menurunkan FPR Frame Difference,preprocessing,FPR piksel,5,"-0.024 [-0.040, -0.012]",0.031,0.062,0.062,tidak signifikan
+H4: Morphology meningkatkan F1 Frame Difference,preprocessing,F piksel,5,"0.075 [0.057, 0.093]",0.031,0.062,0.062,tidak signifikan

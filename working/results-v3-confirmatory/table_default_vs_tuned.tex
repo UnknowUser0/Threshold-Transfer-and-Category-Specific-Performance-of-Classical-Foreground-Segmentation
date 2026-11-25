@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Konfigurasi default vs tuned (F piksel, rerata antar-kategori)}
+\label{tab:table_default_vs_tuned}
+\begin{tabular}{lcccccc}
+\toprule
+Algoritma & Parameter & Default & Tuned & F piksel default (test) & F piksel tuned (test) & F piksel default (semua seq) \\
+\midrule
+B1 Frame Difference & fixed\_thr & 25 & 5 & 0.228 & 0.230 & 0.228 \\
+B2 MOG2 & var\_threshold & 16 & 25 & 0.459 & 0.471 & 0.459 \\
+B3 KNN & dist2\_threshold & 400 & 600 & 0.489 & 0.483 & 0.489 \\
+B4 Farneback & flow\_thr & 1 & 1 & 0.203 & 0.203 & 0.203 \\
+\bottomrule
+\end{tabular}
+\end{table}

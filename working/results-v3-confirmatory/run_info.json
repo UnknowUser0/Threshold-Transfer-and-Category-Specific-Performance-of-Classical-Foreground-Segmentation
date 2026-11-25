@@ -1,0 +1,513 @@
+{
+  "cpu": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.15.2",
+  "opencv": "5.1.0",
+  "numpy": "2.5.5",
+  "pandas": "3.1.1",
+  "cfg": {
+    "mode": "confirmatory",
+    "data_dir": "C:\\Users\\Administrator\\PycharmProjects\\experiment_b_cdnet2014\\SkySet",
+    "categories": [
+      "cameraJitter",
+      "intermittentObjectMotion",
+      "lowFramerate",
+      "PTZ",
+      "thermal",
+      "turbulence"
+    ],
+    "max_seqs_per_category": null,
+    "max_eval_frames": null,
+    "sequences": null,
+    "resize_width": 320,
+    "min_area_ratio": 0.001,
+    "gt_close_kernel": 5,
+    "iou_thr": 0.5,
+    "seed": 42,
+    "tune_per_category": 0,
+    "n_boot": 5000,
+    "cv_threads": 1,
+    "n_jobs": 4,
+    "bench_frames": 300,
+    "bench_repeats": 5,
+    "out_dir": "working/results-v3-confirmatory",
+    "run_tuning": false,
+    "tuned_params_file": "protocol/frozen_v2_params.json",
+    "historical_manifest": "protocol/seen_v2.json",
+    "run_ablation": true,
+    "run_gt_sensitivity": true,
+    "qualitative": true
+  },
+  "algo_params": {
+    "frame_diff": {
+      "fixed_thr": 25,
+      "otsu_floor": 10
+    },
+    "mog2": {
+      "history": 500,
+      "var_threshold": 16,
+      "detect_shadows": true
+    },
+    "knn": {
+      "history": 500,
+      "dist2_threshold": 400.0,
+      "detect_shadows": true
+    },
+    "farneback": {
+      "pyr_scale": 0.5,
+      "levels": 3,
+      "winsize": 15,
+      "iterations": 3,
+      "poly_n": 5,
+      "poly_sigma": 1.2,
+      "flow_thr": 1.0,
+      "mag_scale": 32.0,
+      "otsu_floor": 10
+    }
+  },
+  "tuned_params": {
+    "frame_diff": {
+      "fixed_thr": 5
+    },
+    "mog2": {
+      "var_threshold": 25
+    },
+    "knn": {
+      "dist2_threshold": 600.0
+    },
+    "farneback": {
+      "flow_thr": 1.0
+    }
+  },
+  "tune_grid": {
+    "frame_diff": [
+      "fixed_thr",
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10,
+        15,
+        20,
+        25,
+        30,
+        40
+      ]
+    ],
+    "mog2": [
+      "var_threshold",
+      [
+        8,
+        16,
+        25,
+        36,
+        50
+      ]
+    ],
+    "knn": [
+      "dist2_threshold",
+      [
+        200.0,
+        400.0,
+        600.0,
+        900.0,
+        1400.0
+      ]
+    ],
+    "farneback": [
+      "flow_thr",
+      [
+        0.25,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        3.0
+      ]
+    ]
+  },
+  "std_pipeline": {
+    "blur_ksize": 5,
+    "threshold": "fixed",
+    "morph": true
+  },
+  "gt_variants": {
+    "primer": {
+      "close": 5,
+      "min_area_ratio": 0.001
+    },
+    "tanpa_close": {
+      "close": 0,
+      "min_area_ratio": 0.001
+    },
+    "close9": {
+      "close": 9,
+      "min_area_ratio": 0.001
+    },
+    "area_kecil": {
+      "close": 5,
+      "min_area_ratio": 0.0005
+    },
+    "area_besar": {
+      "close": 5,
+      "min_area_ratio": 0.002
+    }
+  },
+  "split": {
+    "cameraJitter/badminton": "test",
+    "cameraJitter/boulevard": "test",
+    "cameraJitter/sidewalk": "test",
+    "cameraJitter/traffic": "test",
+    "intermittentObjectMotion/abandonedBox": "test",
+    "intermittentObjectMotion/parking": "test",
+    "intermittentObjectMotion/sofa": "test",
+    "intermittentObjectMotion/streetLight": "test",
+    "intermittentObjectMotion/tramstop": "test",
+    "intermittentObjectMotion/winterDriveway": "test",
+    "lowFramerate/port_0_17fps": "test",
+    "lowFramerate/tramCrossroad_1fps": "test",
+    "lowFramerate/tunnelExit_0_35fps": "test",
+    "lowFramerate/turnpike_0_5fps": "test",
+    "PTZ/continuousPan": "test",
+    "PTZ/intermittentPan": "test",
+    "PTZ/twoPositionPTZCam": "test",
+    "PTZ/zoomInZoomOut": "test",
+    "thermal/corridor": "test",
+    "thermal/diningRoom": "test",
+    "thermal/lakeSide": "test",
+    "thermal/library": "test",
+    "thermal/park": "test",
+    "turbulence/turbulence0": "test",
+    "turbulence/turbulence1": "test",
+    "turbulence/turbulence2": "test",
+    "turbulence/turbulence3": "test"
+  },
+  "protocol_audit": {
+    "mode": "confirmatory",
+    "total_sequences": 27,
+    "categories": [
+      "PTZ",
+      "cameraJitter",
+      "intermittentObjectMotion",
+      "lowFramerate",
+      "thermal",
+      "turbulence"
+    ],
+    "interpretation": "CONFIRMATORY ON PREVIOUSLY UNSEEN CATEGORIES (conditional on no prior access)",
+    "historically_seen": 26,
+    "overlap": 0,
+    "category_counts": {
+      "PTZ": 4,
+      "thermal": 5,
+      "intermittentObjectMotion": 6,
+      "cameraJitter": 4,
+      "lowFramerate": 4,
+      "turbulence": 4
+    }
+  },
+  "phase_disclosure": "CONFIRMATORY, previously unseen categories",
+  "historical_manifest_sha256": "30297d83139f84635b95ee851f5cf492265cebf4a438b6bba53ce5aaa09a3d3d",
+  "frozen_params_sha256": "345352240b71afb6e8b7b098758c966d049d745035b1ddcc09c857614ace0e91",
+  "dataset_identity": {
+    "cameraJitter/badminton": {
+      "n_scored": 351,
+      "roi": [
+        800,
+        1150
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "cameraJitter/boulevard": {
+      "n_scored": 1711,
+      "roi": [
+        790,
+        2500
+      ],
+      "resolution": [
+        320,
+        218
+      ]
+    },
+    "cameraJitter/sidewalk": {
+      "n_scored": 401,
+      "roi": [
+        800,
+        1200
+      ],
+      "resolution": [
+        320,
+        218
+      ]
+    },
+    "cameraJitter/traffic": {
+      "n_scored": 671,
+      "roi": [
+        900,
+        1570
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "intermittentObjectMotion/abandonedBox": {
+      "n_scored": 2051,
+      "roi": [
+        2450,
+        4500
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "intermittentObjectMotion/parking": {
+      "n_scored": 1401,
+      "roi": [
+        1100,
+        2500
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "intermittentObjectMotion/sofa": {
+      "n_scored": 2251,
+      "roi": [
+        500,
+        2750
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "intermittentObjectMotion/streetLight": {
+      "n_scored": 3026,
+      "roi": [
+        175,
+        3200
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "intermittentObjectMotion/tramstop": {
+      "n_scored": 1881,
+      "roi": [
+        1320,
+        3200
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "intermittentObjectMotion/winterDriveway": {
+      "n_scored": 1501,
+      "roi": [
+        1000,
+        2500
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "lowFramerate/port_0_17fps": {
+      "n_scored": 2001,
+      "roi": [
+        1000,
+        3000
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "lowFramerate/tramCrossroad_1fps": {
+      "n_scored": 501,
+      "roi": [
+        400,
+        900
+      ],
+      "resolution": [
+        320,
+        175
+      ]
+    },
+    "lowFramerate/tunnelExit_0_35fps": {
+      "n_scored": 2001,
+      "roi": [
+        2000,
+        4000
+      ],
+      "resolution": [
+        320,
+        201
+      ]
+    },
+    "lowFramerate/turnpike_0_5fps": {
+      "n_scored": 701,
+      "roi": [
+        800,
+        1500
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "PTZ/continuousPan": {
+      "n_scored": 1101,
+      "roi": [
+        600,
+        1700
+      ],
+      "resolution": [
+        320,
+        218
+      ]
+    },
+    "PTZ/intermittentPan": {
+      "n_scored": 2301,
+      "roi": [
+        1200,
+        3500
+      ],
+      "resolution": [
+        320,
+        210
+      ]
+    },
+    "PTZ/twoPositionPTZCam": {
+      "n_scored": 1501,
+      "roi": [
+        800,
+        2300
+      ],
+      "resolution": [
+        320,
+        191
+      ]
+    },
+    "PTZ/zoomInZoomOut": {
+      "n_scored": 631,
+      "roi": [
+        500,
+        1130
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "thermal/corridor": {
+      "n_scored": 4901,
+      "roi": [
+        500,
+        5400
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "thermal/diningRoom": {
+      "n_scored": 3001,
+      "roi": [
+        700,
+        3700
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "thermal/lakeSide": {
+      "n_scored": 5501,
+      "roi": [
+        1000,
+        6500
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "thermal/library": {
+      "n_scored": 4301,
+      "roi": [
+        600,
+        4900
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "thermal/park": {
+      "n_scored": 351,
+      "roi": [
+        250,
+        600
+      ],
+      "resolution": [
+        320,
+        262
+      ]
+    },
+    "turbulence/turbulence0": {
+      "n_scored": 4001,
+      "roi": [
+        1000,
+        5000
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "turbulence/turbulence1": {
+      "n_scored": 2801,
+      "roi": [
+        1200,
+        4000
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "turbulence/turbulence2": {
+      "n_scored": 4001,
+      "roi": [
+        500,
+        4500
+      ],
+      "resolution": [
+        320,
+        156
+      ]
+    },
+    "turbulence/turbulence3": {
+      "n_scored": 1401,
+      "roi": [
+        800,
+        2200
+      ],
+      "resolution": [
+        320,
+        216
+      ]
+    }
+  }
+}

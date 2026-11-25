@@ -1,0 +1,14 @@
+{
+  "frame_diff": {
+    "fixed_thr": 5
+  },
+  "mog2": {
+    "var_threshold": 25
+  },
+  "knn": {
+    "dist2_threshold": 600.0
+  },
+  "farneback": {
+    "flow_thr": 1.0
+  }
+}

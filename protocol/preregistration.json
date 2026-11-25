@@ -1,0 +1,23 @@
+{
+  "protocol_version": "3.0",
+  "source": "Version 2 HTML + results-2.zip supplied by user",
+  "historical_source_sha256": "eabfad8601de8d917fa347e370b3ae8a98e18a051d42cf52f22e1c7f602c58e8",
+  "code_sha256": "8bb6105808ab9246df82b06fba2f89fd96c94f7e942c9f9fccb059bbb5bd8269",
+  "parameters_sha256": "345352240b71afb6e8b7b098758c966d049d745035b1ddcc09c857614ace0e91",
+  "hypotheses": [
+    "H1: MOG2 F1 > FrameDiff F1",
+    "H2: KNN F1 > FrameDiff F1",
+    "H3: Gaussian Blur reduces FD FPR",
+    "H4: morphology increases FD F1"
+  ],
+  "category_test_unit": "category",
+  "frozen_resolution_width": 320,
+  "confirmatory_categories": [
+    "cameraJitter",
+    "intermittentObjectMotion",
+    "lowFramerate",
+    "PTZ",
+    "thermal",
+    "turbulence"
+  ]
+}

@@ -1,0 +1,16 @@
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and notebook checkpoints
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Operating-system/editor artifacts
+.DS_Store
+Thumbs.db
+desktop.ini

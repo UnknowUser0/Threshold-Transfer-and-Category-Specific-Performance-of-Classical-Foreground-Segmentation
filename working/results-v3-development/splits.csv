@@ -1,0 +1,27 @@
+seq,category,split,size,roi,frame_dinilai
+badWeather/blizzard,badWeather,tune,"(320, 213)",900-7000,6101
+badWeather/skating,badWeather,test,"(320, 213)",800-3900,3101
+badWeather/snowFall,badWeather,test,"(320, 213)",800-6500,5701
+badWeather/wetSnow,badWeather,tune,"(320, 240)",500-3500,3001
+baseline/highway,baseline,test,"(320, 240)",470-1700,1231
+baseline/office,baseline,tune,"(320, 213)",570-2050,1481
+baseline/pedestrians,baseline,test,"(320, 213)",300-1099,800
+baseline/PETS2006,baseline,tune,"(320, 256)",300-1200,901
+dynamicBackground/boats,dynamicBackground,test,"(320, 240)",1900-7999,6100
+dynamicBackground/canoe,dynamicBackground,tune,"(320, 240)",800-1189,390
+dynamicBackground/fall,dynamicBackground,test,"(320, 213)",1000-4000,3001
+dynamicBackground/fountain01,dynamicBackground,test,"(320, 213)",400-1184,785
+dynamicBackground/fountain02,dynamicBackground,test,"(320, 213)",500-1499,1000
+dynamicBackground/overpass,dynamicBackground,tune,"(320, 240)",1000-3000,2001
+nightVideos/bridgeEntry,nightVideos,tune,"(320, 218)",1000-2500,1501
+nightVideos/busyBoulvard,nightVideos,test,"(320, 182)",730-2760,2031
+nightVideos/fluidHighway,nightVideos,test,"(320, 206)",400-1364,965
+nightVideos/streetCornerAtNight,nightVideos,test,"(320, 132)",800-5200,4401
+nightVideos/tramStation,nightVideos,test,"(320, 197)",500-3000,2501
+nightVideos/winterStreet,nightVideos,tune,"(320, 215)",900-1785,886
+shadow/backdoor,shadow,test,"(320, 240)",400-2000,1601
+shadow/bungalows,shadow,test,"(320, 213)",300-1700,1401
+shadow/busStation,shadow,test,"(320, 213)",300-1250,951
+shadow/copyMachine,shadow,test,"(320, 213)",500-3400,2901
+shadow/cubicle,shadow,tune,"(320, 218)",1100-7400,6301
+shadow/peopleInShade,shadow,tune,"(320, 205)",250-1199,950

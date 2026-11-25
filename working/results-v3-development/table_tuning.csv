@@ -1,0 +1,5 @@
+Algoritma,Parameter,Default,Terpilih,F piksel (tune)
+frame_diff,fixed_thr,25,5,0.372
+mog2,var_threshold,16,25,0.543
+knn,dist2_threshold,400,600,0.600
+farneback,flow_thr,1,1,0.387

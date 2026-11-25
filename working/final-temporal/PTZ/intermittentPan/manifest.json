@@ -1,0 +1,15 @@
+{
+  "sequence": "PTZ/intermittentPan",
+  "phase": "EXPLORATORY POST-HOC",
+  "selection_bias": "snapshots chosen using observed Frame Difference-KNN frame F1 gap",
+  "resolution": [
+    320,
+    210
+  ],
+  "max_frames": null,
+  "evaluated_frames": 2301,
+  "time_seconds": 137.395,
+  "definitions": "GT255=positive; GT0/50=negative; GT85/170=ignored; ROI.bmp applied",
+  "methodology": "Each model processes all preceding frames for background-state warm-up; timing is not benchmarked.",
+  "motion_proxy_limitation": "phaseCorrelate is descriptive; object motion/texture can confound camera motion."
+}

@@ -1,0 +1,34 @@
+{
+  "phases": [
+    {
+      "phase": "development",
+      "total_sequences": 26,
+      "tune_sequences": 10,
+      "test_sequences": 16,
+      "categories": [
+        "badWeather",
+        "baseline",
+        "dynamicBackground",
+        "nightVideos",
+        "shadow"
+      ]
+    },
+    {
+      "phase": "confirmatory",
+      "total_sequences": 27,
+      "tune_sequences": 0,
+      "test_sequences": 27,
+      "categories": [
+        "PTZ",
+        "cameraJitter",
+        "intermittentObjectMotion",
+        "lowFramerate",
+        "thermal",
+        "turbulence"
+      ]
+    }
+  ],
+  "category_result_rows": 44,
+  "figure": "FIG_ALL_11_CATEGORIES_PHASED.png",
+  "claim_policy": "Development and confirmatory result sets remain separate; exploratory analyses carry no new p values."
+}

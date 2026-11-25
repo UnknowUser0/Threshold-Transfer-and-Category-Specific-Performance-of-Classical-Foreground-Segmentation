@@ -1,0 +1,9 @@
+Eksperimen,fps_median,fps_min,fps_max
+B1 Frame Difference (default),2853.0,1717.0,3837.4
+B2 MOG2 (default),610.2,303.3,621.2
+B3 KNN (default),509.2,475.3,520.6
+B4 Farneback (default),91.8,57.3,92.5
+B1 Frame Difference (tuned),1377.4,1338.4,1431.9
+B2 MOG2 (tuned),303.1,298.6,311.5
+B3 KNN (tuned),445.1,280.0,458.2
+B4 Farneback (tuned),47.5,46.6,49.9

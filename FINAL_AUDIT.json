@@ -1,0 +1,41 @@
+{
+  "technical_audit_passed": true,
+  "target_journal": "IJCCS",
+  "evaluation_phase": "V3 confirmatory metadata; independent preregistration date NOT independently verified",
+  "original_audit": {
+    "phase": "confirmatory",
+    "sequences": 27,
+    "categories": [
+      "PTZ",
+      "cameraJitter",
+      "intermittentObjectMotion",
+      "lowFramerate",
+      "thermal",
+      "turbulence"
+    ],
+    "methods": 4,
+    "rows": 675
+  },
+  "recomputed_category_mean_f1": {
+    "B1t": 0.229954,
+    "B2t": 0.471391,
+    "B3t": 0.48322,
+    "B4t": 0.202505
+  },
+  "hash_checks": 7,
+  "followup_studies": {
+    "temporal_pilot": "complete",
+    "temporal_summary_rows": 12,
+    "resolution_pilot": "complete",
+    "resolution_rows": 36,
+    "interpretation": "post-hoc exploratory; three selected sequences; no inferential claims"
+  },
+  "unverified": [
+    "third-party evidence of preregistration timestamp",
+    "independent third-party reproduction from raw video and annotations",
+    "publication novelty, author declarations, and external-model training exposure",
+    "visual Word pagination against IJCCS 10-12 page requirements",
+    "peer-review outcome"
+  ],
+  "issues": []
+}

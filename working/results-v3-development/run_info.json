@@ -1,0 +1,489 @@
+{
+  "cpu": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.15.2",
+  "opencv": "5.1.0",
+  "numpy": "2.5.5",
+  "pandas": "3.1.1",
+  "cfg": {
+    "mode": "development",
+    "data_dir": "C:\\Users\\Administrator\\PycharmProjects\\experiment_b_cdnet2014\\SkySet",
+    "categories": [
+      "baseline",
+      "dynamicBackground",
+      "nightVideos",
+      "badWeather",
+      "shadow"
+    ],
+    "max_seqs_per_category": null,
+    "max_eval_frames": null,
+    "sequences": null,
+    "resize_width": 320,
+    "min_area_ratio": 0.001,
+    "gt_close_kernel": 5,
+    "iou_thr": 0.5,
+    "seed": 42,
+    "tune_per_category": 2,
+    "n_boot": 5000,
+    "cv_threads": 1,
+    "n_jobs": 4,
+    "bench_frames": 300,
+    "bench_repeats": 5,
+    "out_dir": "working/results-v3-development",
+    "run_tuning": true,
+    "tuned_params_file": null,
+    "historical_manifest": "protocol/seen_v2.json",
+    "run_ablation": true,
+    "run_gt_sensitivity": true,
+    "qualitative": true
+  },
+  "algo_params": {
+    "frame_diff": {
+      "fixed_thr": 25,
+      "otsu_floor": 10
+    },
+    "mog2": {
+      "history": 500,
+      "var_threshold": 16,
+      "detect_shadows": true
+    },
+    "knn": {
+      "history": 500,
+      "dist2_threshold": 400.0,
+      "detect_shadows": true
+    },
+    "farneback": {
+      "pyr_scale": 0.5,
+      "levels": 3,
+      "winsize": 15,
+      "iterations": 3,
+      "poly_n": 5,
+      "poly_sigma": 1.2,
+      "flow_thr": 1.0,
+      "mag_scale": 32.0,
+      "otsu_floor": 10
+    }
+  },
+  "tuned_params": {
+    "frame_diff": {
+      "fixed_thr": 5
+    },
+    "mog2": {
+      "var_threshold": 25
+    },
+    "knn": {
+      "dist2_threshold": 600.0
+    },
+    "farneback": {
+      "flow_thr": 1.0
+    }
+  },
+  "tune_grid": {
+    "frame_diff": [
+      "fixed_thr",
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10,
+        15,
+        20,
+        25,
+        30,
+        40
+      ]
+    ],
+    "mog2": [
+      "var_threshold",
+      [
+        8,
+        16,
+        25,
+        36,
+        50
+      ]
+    ],
+    "knn": [
+      "dist2_threshold",
+      [
+        200.0,
+        400.0,
+        600.0,
+        900.0,
+        1400.0
+      ]
+    ],
+    "farneback": [
+      "flow_thr",
+      [
+        0.25,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        3.0
+      ]
+    ]
+  },
+  "std_pipeline": {
+    "blur_ksize": 5,
+    "threshold": "fixed",
+    "morph": true
+  },
+  "gt_variants": {
+    "primer": {
+      "close": 5,
+      "min_area_ratio": 0.001
+    },
+    "tanpa_close": {
+      "close": 0,
+      "min_area_ratio": 0.001
+    },
+    "close9": {
+      "close": 9,
+      "min_area_ratio": 0.001
+    },
+    "area_kecil": {
+      "close": 5,
+      "min_area_ratio": 0.0005
+    },
+    "area_besar": {
+      "close": 5,
+      "min_area_ratio": 0.002
+    }
+  },
+  "split": {
+    "badWeather/blizzard": "tune",
+    "badWeather/skating": "test",
+    "badWeather/snowFall": "test",
+    "badWeather/wetSnow": "tune",
+    "baseline/highway": "test",
+    "baseline/office": "tune",
+    "baseline/pedestrians": "test",
+    "baseline/PETS2006": "tune",
+    "dynamicBackground/boats": "test",
+    "dynamicBackground/canoe": "tune",
+    "dynamicBackground/fall": "test",
+    "dynamicBackground/fountain01": "test",
+    "dynamicBackground/fountain02": "test",
+    "dynamicBackground/overpass": "tune",
+    "nightVideos/bridgeEntry": "tune",
+    "nightVideos/busyBoulvard": "test",
+    "nightVideos/fluidHighway": "test",
+    "nightVideos/streetCornerAtNight": "test",
+    "nightVideos/tramStation": "test",
+    "nightVideos/winterStreet": "tune",
+    "shadow/backdoor": "test",
+    "shadow/bungalows": "test",
+    "shadow/busStation": "test",
+    "shadow/copyMachine": "test",
+    "shadow/cubicle": "tune",
+    "shadow/peopleInShade": "tune"
+  },
+  "protocol_audit": {
+    "mode": "development",
+    "total_sequences": 26,
+    "categories": [
+      "badWeather",
+      "baseline",
+      "dynamicBackground",
+      "nightVideos",
+      "shadow"
+    ],
+    "interpretation": "EXPLORATORY; prior v2 test results have been inspected"
+  },
+  "phase_disclosure": "EXPLORATORY, version 2 test data already examined",
+  "historical_manifest_sha256": "30297d83139f84635b95ee851f5cf492265cebf4a438b6bba53ce5aaa09a3d3d",
+  "frozen_params_sha256": null,
+  "dataset_identity": {
+    "badWeather/blizzard": {
+      "n_scored": 6101,
+      "roi": [
+        900,
+        7000
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "badWeather/skating": {
+      "n_scored": 3101,
+      "roi": [
+        800,
+        3900
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "badWeather/snowFall": {
+      "n_scored": 5701,
+      "roi": [
+        800,
+        6500
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "badWeather/wetSnow": {
+      "n_scored": 3001,
+      "roi": [
+        500,
+        3500
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "baseline/highway": {
+      "n_scored": 1231,
+      "roi": [
+        470,
+        1700
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "baseline/office": {
+      "n_scored": 1481,
+      "roi": [
+        570,
+        2050
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "baseline/pedestrians": {
+      "n_scored": 800,
+      "roi": [
+        300,
+        1099
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "baseline/PETS2006": {
+      "n_scored": 901,
+      "roi": [
+        300,
+        1200
+      ],
+      "resolution": [
+        320,
+        256
+      ]
+    },
+    "dynamicBackground/boats": {
+      "n_scored": 6100,
+      "roi": [
+        1900,
+        7999
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "dynamicBackground/canoe": {
+      "n_scored": 390,
+      "roi": [
+        800,
+        1189
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "dynamicBackground/fall": {
+      "n_scored": 3001,
+      "roi": [
+        1000,
+        4000
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "dynamicBackground/fountain01": {
+      "n_scored": 785,
+      "roi": [
+        400,
+        1184
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "dynamicBackground/fountain02": {
+      "n_scored": 1000,
+      "roi": [
+        500,
+        1499
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "dynamicBackground/overpass": {
+      "n_scored": 2001,
+      "roi": [
+        1000,
+        3000
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "nightVideos/bridgeEntry": {
+      "n_scored": 1501,
+      "roi": [
+        1000,
+        2500
+      ],
+      "resolution": [
+        320,
+        218
+      ]
+    },
+    "nightVideos/busyBoulvard": {
+      "n_scored": 2031,
+      "roi": [
+        730,
+        2760
+      ],
+      "resolution": [
+        320,
+        182
+      ]
+    },
+    "nightVideos/fluidHighway": {
+      "n_scored": 965,
+      "roi": [
+        400,
+        1364
+      ],
+      "resolution": [
+        320,
+        206
+      ]
+    },
+    "nightVideos/streetCornerAtNight": {
+      "n_scored": 4401,
+      "roi": [
+        800,
+        5200
+      ],
+      "resolution": [
+        320,
+        132
+      ]
+    },
+    "nightVideos/tramStation": {
+      "n_scored": 2501,
+      "roi": [
+        500,
+        3000
+      ],
+      "resolution": [
+        320,
+        197
+      ]
+    },
+    "nightVideos/winterStreet": {
+      "n_scored": 886,
+      "roi": [
+        900,
+        1785
+      ],
+      "resolution": [
+        320,
+        215
+      ]
+    },
+    "shadow/backdoor": {
+      "n_scored": 1601,
+      "roi": [
+        400,
+        2000
+      ],
+      "resolution": [
+        320,
+        240
+      ]
+    },
+    "shadow/bungalows": {
+      "n_scored": 1401,
+      "roi": [
+        300,
+        1700
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "shadow/busStation": {
+      "n_scored": 951,
+      "roi": [
+        300,
+        1250
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "shadow/copyMachine": {
+      "n_scored": 2901,
+      "roi": [
+        500,
+        3400
+      ],
+      "resolution": [
+        320,
+        213
+      ]
+    },
+    "shadow/cubicle": {
+      "n_scored": 6301,
+      "roi": [
+        1100,
+        7400
+      ],
+      "resolution": [
+        320,
+        218
+      ]
+    },
+    "shadow/peopleInShade": {
+      "n_scored": 950,
+      "roi": [
+        250,
+        1199
+      ],
+      "resolution": [
+        320,
+        205
+      ]
+    }
+  }
+}

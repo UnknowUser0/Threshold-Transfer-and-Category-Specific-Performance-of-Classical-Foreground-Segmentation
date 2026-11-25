@@ -1,0 +1,184 @@
+{
+  "cpu": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.15.2",
+  "opencv": "5.1.0",
+  "numpy": "2.5.5",
+  "pandas": "3.1.1",
+  "cfg": {
+    "data_dir": "SkySet/dataset",
+    "categories": [
+      "baseline",
+      "dynamicBackground",
+      "nightVideos",
+      "badWeather",
+      "shadow"
+    ],
+    "max_seqs_per_category": null,
+    "max_eval_frames": null,
+    "sequences": null,
+    "resize_width": 320,
+    "min_area_ratio": 0.001,
+    "gt_close_kernel": 5,
+    "iou_thr": 0.5,
+    "seed": 42,
+    "tune_per_category": 2,
+    "n_boot": 5000,
+    "cv_threads": 1,
+    "n_jobs": 16,
+    "bench_frames": 300,
+    "bench_repeats": 5,
+    "out_dir": "working/results-2",
+    "run_tuning": true,
+    "tuned_params_file": null,
+    "run_ablation": true,
+    "run_gt_sensitivity": true,
+    "qualitative": true
+  },
+  "algo_params": {
+    "frame_diff": {
+      "fixed_thr": 25,
+      "otsu_floor": 10
+    },
+    "mog2": {
+      "history": 500,
+      "var_threshold": 16,
+      "detect_shadows": true
+    },
+    "knn": {
+      "history": 500,
+      "dist2_threshold": 400.0,
+      "detect_shadows": true
+    },
+    "farneback": {
+      "pyr_scale": 0.5,
+      "levels": 3,
+      "winsize": 15,
+      "iterations": 3,
+      "poly_n": 5,
+      "poly_sigma": 1.2,
+      "flow_thr": 1.0,
+      "mag_scale": 32.0,
+      "otsu_floor": 10
+    }
+  },
+  "tuned_params": {
+    "frame_diff": {
+      "fixed_thr": 5
+    },
+    "mog2": {
+      "var_threshold": 25
+    },
+    "knn": {
+      "dist2_threshold": 600.0
+    },
+    "farneback": {
+      "flow_thr": 1.0
+    }
+  },
+  "tune_grid": {
+    "frame_diff": [
+      "fixed_thr",
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10,
+        15,
+        20,
+        25,
+        30,
+        40
+      ]
+    ],
+    "mog2": [
+      "var_threshold",
+      [
+        8,
+        16,
+        25,
+        36,
+        50
+      ]
+    ],
+    "knn": [
+      "dist2_threshold",
+      [
+        200.0,
+        400.0,
+        600.0,
+        900.0,
+        1400.0
+      ]
+    ],
+    "farneback": [
+      "flow_thr",
+      [
+        0.25,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        3.0
+      ]
+    ]
+  },
+  "std_pipeline": {
+    "blur_ksize": 5,
+    "threshold": "fixed",
+    "morph": true
+  },
+  "gt_variants": {
+    "primer": {
+      "close": 5,
+      "min_area_ratio": 0.001
+    },
+    "tanpa_close": {
+      "close": 0,
+      "min_area_ratio": 0.001
+    },
+    "close9": {
+      "close": 9,
+      "min_area_ratio": 0.001
+    },
+    "area_kecil": {
+      "close": 5,
+      "min_area_ratio": 0.0005
+    },
+    "area_besar": {
+      "close": 5,
+      "min_area_ratio": 0.002
+    }
+  },
+  "split": {
+    "badWeather/blizzard": "tune",
+    "badWeather/skating": "test",
+    "badWeather/snowFall": "test",
+    "badWeather/wetSnow": "tune",
+    "baseline/highway": "test",
+    "baseline/office": "tune",
+    "baseline/pedestrians": "test",
+    "baseline/PETS2006": "tune",
+    "dynamicBackground/boats": "test",
+    "dynamicBackground/canoe": "tune",
+    "dynamicBackground/fall": "test",
+    "dynamicBackground/fountain01": "test",
+    "dynamicBackground/fountain02": "test",
+    "dynamicBackground/overpass": "tune",
+    "nightVideos/bridgeEntry": "tune",
+    "nightVideos/busyBoulvard": "test",
+    "nightVideos/fluidHighway": "test",
+    "nightVideos/streetCornerAtNight": "test",
+    "nightVideos/tramStation": "test",
+    "nightVideos/winterStreet": "tune",
+    "shadow/backdoor": "test",
+    "shadow/bungalows": "test",
+    "shadow/busStation": "test",
+    "shadow/copyMachine": "test",
+    "shadow/cubicle": "tune",
+    "shadow/peopleInShade": "tune"
+  }
+}

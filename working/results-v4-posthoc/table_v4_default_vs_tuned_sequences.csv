@@ -1,0 +1,109 @@
+seq,category,tuned_f1,default_f1,f1_delta_tuned_minus_default,method
+thermal/lakeSide,thermal,0.100395423,0.00788304236,0.0925123811,Frame Difference
+thermal/corridor,thermal,0.432482902,0.0550469299,0.377435972,Frame Difference
+turbulence/turbulence0,turbulence,0.0125963704,0.200310075,-0.187713705,Frame Difference
+thermal/library,thermal,0.154443342,0.0211950176,0.133248324,Frame Difference
+intermittentObjectMotion/abandonedBox,intermittentObjectMotion,0.322231254,0.054967366,0.267263888,Frame Difference
+turbulence/turbulence2,turbulence,0.0130046316,0.287997711,-0.274993079,Frame Difference
+lowFramerate/tunnelExit_0_35fps,lowFramerate,0.329047599,0.244073093,0.0849745065,Frame Difference
+turbulence/turbulence1,turbulence,0.0170192614,0.130924286,-0.113905025,Frame Difference
+thermal/diningRoom,thermal,0.377934348,0.0532228683,0.32471148,Frame Difference
+PTZ/intermittentPan,PTZ,0.464285808,0.432315919,0.0319698893,Frame Difference
+intermittentObjectMotion/streetLight,intermittentObjectMotion,0.0489764836,0.000541669562,0.048434814,Frame Difference
+intermittentObjectMotion/tramstop,intermittentObjectMotion,0.439552283,0.184281123,0.255271159,Frame Difference
+lowFramerate/port_0_17fps,lowFramerate,0.0172170522,0.286283224,-0.269066172,Frame Difference
+intermittentObjectMotion/sofa,intermittentObjectMotion,0.382148359,0.110227394,0.271920965,Frame Difference
+cameraJitter/boulevard,cameraJitter,0.162476972,0.260064639,-0.0975876665,Frame Difference
+intermittentObjectMotion/parking,intermittentObjectMotion,0.110637272,0.000106475012,0.110530797,Frame Difference
+intermittentObjectMotion/winterDriveway,intermittentObjectMotion,0.251314554,0.0054487364,0.245865818,Frame Difference
+PTZ/twoPositionPTZCam,PTZ,0.633852105,0.549237711,0.0846143936,Frame Difference
+turbulence/turbulence3,turbulence,0.0844030962,0.340275456,-0.25587236,Frame Difference
+PTZ/continuousPan,PTZ,0.057435237,0.249145627,-0.19171039,Frame Difference
+cameraJitter/traffic,cameraJitter,0.192728567,0.307996327,-0.11526776,Frame Difference
+lowFramerate/turnpike_0_5fps,lowFramerate,0.333627427,0.568417818,-0.234790391,Frame Difference
+cameraJitter/sidewalk,cameraJitter,0.0815012599,0.0782182163,0.00328304358,Frame Difference
+cameraJitter/badminton,cameraJitter,0.1799097,0.223737277,-0.0438275773,Frame Difference
+PTZ/zoomInZoomOut,PTZ,0.107384104,0.141160927,-0.0337768229,Frame Difference
+lowFramerate/tramCrossroad_1fps,lowFramerate,0.437884203,0.543181869,-0.105297666,Frame Difference
+thermal/park,thermal,0.632194995,0.350180319,0.282014676,Frame Difference
+thermal/lakeSide,thermal,0.325519887,0.341931817,-0.0164119301,MOG2
+thermal/corridor,thermal,0.689406258,0.685023397,0.00438286104,MOG2
+turbulence/turbulence0,turbulence,0.441710369,0.27739974,0.164310629,MOG2
+thermal/library,thermal,0.245636838,0.25776071,-0.0121238724,MOG2
+intermittentObjectMotion/abandonedBox,intermittentObjectMotion,0.261917335,0.256846268,0.0050710668,MOG2
+turbulence/turbulence2,turbulence,0.712720251,0.581309613,0.131410638,MOG2
+lowFramerate/tunnelExit_0_35fps,lowFramerate,0.402382054,0.450485202,-0.0481031485,MOG2
+turbulence/turbulence1,turbulence,0.483683224,0.359325033,0.124358191,MOG2
+thermal/diningRoom,thermal,0.548304691,0.56899503,-0.0206903386,MOG2
+PTZ/intermittentPan,PTZ,0.061999818,0.0617365074,0.000263310573,MOG2
+intermittentObjectMotion/streetLight,intermittentObjectMotion,0.18329597,0.196792024,-0.013496054,MOG2
+intermittentObjectMotion/tramstop,intermittentObjectMotion,0.462139478,0.483220624,-0.0210811457,MOG2
+lowFramerate/port_0_17fps,lowFramerate,0.276737822,0.115589174,0.161148648,MOG2
+intermittentObjectMotion/sofa,intermittentObjectMotion,0.544842606,0.570158451,-0.0253158445,MOG2
+cameraJitter/boulevard,cameraJitter,0.729883637,0.728592871,0.00129076551,MOG2
+intermittentObjectMotion/parking,intermittentObjectMotion,0.121075745,0.150976316,-0.0299005712,MOG2
+intermittentObjectMotion/winterDriveway,intermittentObjectMotion,0.328972489,0.340272502,-0.0113000135,MOG2
+PTZ/twoPositionPTZCam,PTZ,0.683659306,0.709320205,-0.0256608984,MOG2
+turbulence/turbulence3,turbulence,0.865804654,0.846946858,0.0188577962,MOG2
+PTZ/continuousPan,PTZ,0.0602858979,0.0560391449,0.00424675297,MOG2
+cameraJitter/traffic,cameraJitter,0.643890021,0.634514528,0.00937549249,MOG2
+lowFramerate/turnpike_0_5fps,lowFramerate,0.562137987,0.643561012,-0.0814230247,MOG2
+cameraJitter/sidewalk,cameraJitter,0.482005401,0.480063869,0.00194153152,MOG2
+cameraJitter/badminton,cameraJitter,0.812745772,0.835442429,-0.0226966562,MOG2
+PTZ/zoomInZoomOut,PTZ,0.0557266182,0.0485339874,0.00719263077,MOG2
+lowFramerate/tramCrossroad_1fps,lowFramerate,0.700776824,0.739330408,-0.0385535844,MOG2
+thermal/park,thermal,0.77747496,0.787174502,-0.00969954133,MOG2
+thermal/lakeSide,thermal,0.353492585,0.4158549,-0.0623623151,KNN
+thermal/corridor,thermal,0.779385825,0.783247488,-0.00386166306,KNN
+turbulence/turbulence0,turbulence,0.280531819,0.19231496,0.0882168592,KNN
+thermal/library,thermal,0.338416963,0.36529439,-0.0268774274,KNN
+intermittentObjectMotion/abandonedBox,intermittentObjectMotion,0.400019553,0.368252056,0.0317674965,KNN
+turbulence/turbulence2,turbulence,0.730405534,0.663409042,0.066996492,KNN
+lowFramerate/tunnelExit_0_35fps,lowFramerate,0.416883453,0.464769924,-0.0478864714,KNN
+turbulence/turbulence1,turbulence,0.449554157,0.375693198,0.073860959,KNN
+thermal/diningRoom,thermal,0.673984493,0.714638175,-0.0406536825,KNN
+PTZ/intermittentPan,PTZ,0.0544207745,0.0502638307,0.00415694387,KNN
+intermittentObjectMotion/streetLight,intermittentObjectMotion,0.233277645,0.260599009,-0.0273213633,KNN
+intermittentObjectMotion/tramstop,intermittentObjectMotion,0.490574027,0.513117471,-0.0225434438,KNN
+lowFramerate/port_0_17fps,lowFramerate,0.0670536095,0.0260435702,0.0410100393,KNN
+intermittentObjectMotion/sofa,intermittentObjectMotion,0.53534819,0.559122819,-0.0237746289,KNN
+cameraJitter/boulevard,cameraJitter,0.756918041,0.73824263,0.0186754101,KNN
+intermittentObjectMotion/parking,intermittentObjectMotion,0.267959199,0.327594365,-0.0596351662,KNN
+intermittentObjectMotion/winterDriveway,intermittentObjectMotion,0.306908267,0.322349529,-0.0154412621,KNN
+PTZ/twoPositionPTZCam,PTZ,0.669022854,0.697672511,-0.0286496577,KNN
+turbulence/turbulence3,turbulence,0.8158799,0.824685657,-0.00880575765,KNN
+PTZ/continuousPan,PTZ,0.0600938991,0.0501365588,0.00995734034,KNN
+cameraJitter/traffic,cameraJitter,0.706835556,0.688380363,0.018455193,KNN
+lowFramerate/turnpike_0_5fps,lowFramerate,0.678762568,0.779723156,-0.100960587,KNN
+cameraJitter/sidewalk,cameraJitter,0.513521712,0.529388472,-0.0158667597,KNN
+cameraJitter/badminton,cameraJitter,0.857762821,0.875556432,-0.0177936108,KNN
+PTZ/zoomInZoomOut,PTZ,0.0269907321,0.0215597419,0.0054309902,KNN
+lowFramerate/tramCrossroad_1fps,lowFramerate,0.731906305,0.76800385,-0.0360975449,KNN
+thermal/park,thermal,0.718890503,0.745051172,-0.0261606687,KNN
+thermal/lakeSide,thermal,0.0816862926,0.0816862926,0,Farneback
+thermal/corridor,thermal,0.534840921,0.534840921,0,Farneback
+turbulence/turbulence0,turbulence,0.0286615641,0.0286615641,0,Farneback
+thermal/library,thermal,0.24697248,0.24697248,0,Farneback
+intermittentObjectMotion/abandonedBox,intermittentObjectMotion,0.0833962013,0.0833962013,0,Farneback
+turbulence/turbulence2,turbulence,0.161320533,0.161320533,0,Farneback
+lowFramerate/tunnelExit_0_35fps,lowFramerate,0.23228497,0.23228497,0,Farneback
+turbulence/turbulence1,turbulence,0.0206623095,0.0206623095,0,Farneback
+thermal/diningRoom,thermal,0.492664077,0.492664077,0,Farneback
+PTZ/intermittentPan,PTZ,0.331523722,0.331523722,0,Farneback
+intermittentObjectMotion/streetLight,intermittentObjectMotion,0.00556738169,0.00556738169,0,Farneback
+intermittentObjectMotion/tramstop,intermittentObjectMotion,0.409553806,0.409553806,0,Farneback
+lowFramerate/port_0_17fps,lowFramerate,0.0123532239,0.0123532239,0,Farneback
+intermittentObjectMotion/sofa,intermittentObjectMotion,0.392372035,0.392372035,0,Farneback
+cameraJitter/boulevard,cameraJitter,0.169302615,0.169302615,0,Farneback
+intermittentObjectMotion/parking,intermittentObjectMotion,0.0862631557,0.0862631557,0,Farneback
+intermittentObjectMotion/winterDriveway,intermittentObjectMotion,0.0507196494,0.0507196494,0,Farneback
+PTZ/twoPositionPTZCam,PTZ,0.402680219,0.402680219,0,Farneback
+turbulence/turbulence3,turbulence,0.181266291,0.181266291,0,Farneback
+PTZ/continuousPan,PTZ,0.0173989291,0.0173989291,0,Farneback
+cameraJitter/traffic,cameraJitter,0.181678506,0.181678506,0,Farneback
+lowFramerate/turnpike_0_5fps,lowFramerate,0.316557829,0.316557829,0,Farneback
+cameraJitter/sidewalk,cameraJitter,0.0604298655,0.0604298655,0,Farneback
+cameraJitter/badminton,cameraJitter,0.0997621719,0.0997621719,0,Farneback
+PTZ/zoomInZoomOut,PTZ,0.0627305417,0.0627305417,0,Farneback
+lowFramerate/tramCrossroad_1fps,lowFramerate,0.319771179,0.319771179,0,Farneback
+thermal/park,thermal,0.614447629,0.614447629,0,Farneback

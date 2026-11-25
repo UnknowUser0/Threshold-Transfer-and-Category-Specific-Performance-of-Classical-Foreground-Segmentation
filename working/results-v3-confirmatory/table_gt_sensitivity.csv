@@ -1,0 +1,6 @@
+Varian GT,B1 F1 box,B2 F1 box,B3 F1 box,B4 F1 box,Urutan,tau vs primer
+primer,0.097,0.272,0.281,0.061,B3 > B2 > B1 > B4,1.00
+tanpa_close,0.096,0.269,0.280,0.061,B3 > B2 > B1 > B4,1.00
+close9,0.100,0.263,0.272,0.063,B3 > B2 > B1 > B4,1.00
+area_kecil,0.096,0.263,0.275,0.061,B3 > B2 > B1 > B4,1.00
+area_besar,0.098,0.269,0.280,0.063,B3 > B2 > B1 > B4,1.00

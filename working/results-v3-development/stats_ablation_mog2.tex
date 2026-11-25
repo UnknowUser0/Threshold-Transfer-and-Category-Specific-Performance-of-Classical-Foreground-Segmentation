@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{Efek faktorial mog2 (kontras on-off, sign-flip kategori, Holm per metrik)}
+\label{tab:stats_ablation_mog2}
+\begin{tabular}{lcccccccc}
+\toprule
+Metrik & Efek & n sekuens & n kategori & efek [CI95] & menang & p kategori & p Holm & p Wilcoxon seq eksploratori \\
+\midrule
+px\_f & blur & 16 & 5 & 0.005 [-0.005, 0.017] & 8/16 & 0.875 & 0.875 & 0.744 \\
+px\_f & morph & 16 & 5 & 0.046 [0.028, 0.063] & 15/16 & 0.062 & 0.188 & <0.001 \\
+px\_f & blur x morph & 16 & 5 & -0.018 [-0.026, -0.010] & 4/16 & 0.062 & 0.188 & 0.003 \\
+px\_precision & blur & 16 & 5 & 0.009 [-0.004, 0.021] & 7/16 & 0.938 & 0.938 & 0.940 \\
+px\_precision & morph & 16 & 5 & 0.076 [0.043, 0.108] & 15/16 & 0.062 & 0.188 & <0.001 \\
+px\_precision & blur x morph & 16 & 5 & -0.038 [-0.055, -0.020] & 1/16 & 0.062 & 0.188 & <0.001 \\
+px\_recall & blur & 16 & 5 & 0.004 [-0.006, 0.013] & 9/16 & 0.312 & 0.375 & 0.274 \\
+px\_recall & morph & 16 & 5 & 0.026 [0.015, 0.036] & 13/16 & 0.062 & 0.188 & 0.002 \\
+px\_recall & blur x morph & 16 & 5 & 0.003 [-0.000, 0.006] & 13/16 & 0.188 & 0.375 & 0.130 \\
+px\_fpr & blur & 16 & 5 & 0.000 [-0.001, 0.001] & 9/16 & 0.688 & 0.688 & 0.821 \\
+px\_fpr & morph & 16 & 5 & -0.002 [-0.003, -0.001] & 2/16 & 0.062 & 0.188 & <0.001 \\
+px\_fpr & blur x morph & 16 & 5 & 0.001 [0.001, 0.002] & 16/16 & 0.062 & 0.188 & <0.001 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,5 @@
+Algoritma,Parameter,Default,Tuned,F piksel default (test),F piksel tuned (test),F piksel default (semua seq)
+B1 Frame Difference,fixed_thr,25,5,0.344,0.448,0.274
+B2 MOG2,var_threshold,16,25,0.551,0.572,0.536
+B3 KNN,dist2_threshold,400,600,0.586,0.586,0.577
+B4 Farneback,flow_thr,1,1,0.460,0.460,0.428

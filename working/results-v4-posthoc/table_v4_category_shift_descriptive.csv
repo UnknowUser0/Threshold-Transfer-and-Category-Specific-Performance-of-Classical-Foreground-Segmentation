@@ -1,0 +1,45 @@
+category,exp,f1,phase,method
+PTZ,B4t,0.203583353,confirmatory,Farneback
+cameraJitter,B4t,0.12779329,confirmatory,Farneback
+intermittentObjectMotion,B4t,0.171312038,confirmatory,Farneback
+lowFramerate,B4t,0.220241801,confirmatory,Farneback
+thermal,B4t,0.39412228,confirmatory,Farneback
+turbulence,B4t,0.0979776743,confirmatory,Farneback
+badWeather,B4t,0.583611261,development,Farneback
+baseline,B4t,0.401973434,development,Farneback
+dynamicBackground,B4t,0.331115467,development,Farneback
+nightVideos,B4t,0.31410878,development,Farneback
+shadow,B4t,0.507152802,development,Farneback
+PTZ,B1t,0.315739313,confirmatory,Frame Difference
+cameraJitter,B1t,0.154154125,confirmatory,Frame Difference
+intermittentObjectMotion,B1t,0.259143368,confirmatory,Frame Difference
+lowFramerate,B1t,0.27944407,confirmatory,Frame Difference
+thermal,B1t,0.339490202,confirmatory,Frame Difference
+turbulence,B1t,0.0317558399,confirmatory,Frame Difference
+badWeather,B1t,0.391460763,development,Frame Difference
+baseline,B1t,0.571917992,development,Frame Difference
+dynamicBackground,B1t,0.196130829,development,Frame Difference
+nightVideos,B1t,0.366751776,development,Frame Difference
+shadow,B1t,0.532844985,development,Frame Difference
+PTZ,B3t,0.202632065,confirmatory,KNN
+cameraJitter,B3t,0.708759532,confirmatory,KNN
+intermittentObjectMotion,B3t,0.372347814,confirmatory,KNN
+lowFramerate,B3t,0.473651484,confirmatory,KNN
+thermal,B3t,0.572834074,confirmatory,KNN
+turbulence,B3t,0.569092852,confirmatory,KNN
+badWeather,B3t,0.404364862,development,KNN
+baseline,B3t,0.74220079,development,KNN
+dynamicBackground,B3t,0.643171953,development,KNN
+nightVideos,B3t,0.354583407,development,KNN
+shadow,B3t,0.743457351,development,KNN
+PTZ,B2t,0.21541791,confirmatory,MOG2
+cameraJitter,B2t,0.667131208,confirmatory,MOG2
+intermittentObjectMotion,B2t,0.317040604,confirmatory,MOG2
+lowFramerate,B2t,0.485508672,confirmatory,MOG2
+thermal,B2t,0.517268527,confirmatory,MOG2
+turbulence,B2t,0.625979624,confirmatory,MOG2
+badWeather,B2t,0.391939002,development,MOG2
+baseline,B2t,0.669363977,development,MOG2
+dynamicBackground,B2t,0.61108578,development,MOG2
+nightVideos,B2t,0.345825823,development,MOG2
+shadow,B2t,0.726117127,development,MOG2

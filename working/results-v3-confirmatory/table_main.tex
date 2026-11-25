@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Hasil utama pada 27 sekuens uji (rerata antar-kategori; metrik piksel CDnet; CI95 bootstrap bertingkat)}
+\label{tab:table_main}
+\begin{tabular}{lcccccccc}
+\toprule
+Algoritma & P & R & F [CI95] & PWC & MCC frame & F1 box@0.5 & IoU (TP) & FPS (median) \\
+\midrule
+B1 Frame Difference (tuned) & 0.350 & 0.627 & 0.230 [0.172, 0.287] & 15.13 & 0.199 [0.137, 0.266] & 0.097 & 0.629 & 2546 \\
+B2 MOG2 (tuned) & 0.672 & 0.453 & 0.471 [0.405, 0.545] & 3.50 & 0.373 [0.297, 0.450] & 0.272 & 0.720 & 598 \\
+B3 KNN (tuned) & 0.666 & 0.496 & 0.483 [0.404, 0.562] & 3.79 & 0.387 [0.310, 0.470] & 0.281 & 0.732 & 403 \\
+B4 Farneback (tuned) & 0.231 & 0.555 & 0.203 [0.151, 0.253] & 17.55 & 0.182 [0.113, 0.253] & 0.061 & 0.624 & 86 \\
+Selalu foreground (trivial) & 0.038 & 1.000 & 0.070 [0.049, 0.095] & 96.19 & 0 & - & - & - \\
+\bottomrule
+\end{tabular}
+\end{table}

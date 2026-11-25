@@ -1,0 +1,18 @@
+﻿{
+    "analysis_phase":  "POST-HOC EXPLORATORY",
+    "dataset":  "user-supplied CDnet2014; local path omitted",
+    "sequences":  [
+                      "PTZ/intermittentPan",
+                      "turbulence/turbulence0",
+                      "cameraJitter/badminton"
+                  ],
+    "widths":  [
+                   "320",
+                   "640",
+                   "native"
+               ],
+    "max_eval_frames":  null,
+    "threshold_policy":  "Frozen numeric 320px params reused across all widths; not rescaled",
+    "comparison_limitation":  "Native dimensions vary; requested 640 capped at native width; 640 and native coincide for PTZ/intermittentPan",
+    "no_new_confirmation":  true
+}

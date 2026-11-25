@@ -1,0 +1,60 @@
+{
+  "analysis": "V4 read-only post-hoc",
+  "v3_confirmatory_mode": "confirmatory",
+  "v3_confirmatory_sequences": 27,
+  "v3_confirmatory_categories": [
+    "PTZ",
+    "cameraJitter",
+    "intermittentObjectMotion",
+    "lowFramerate",
+    "thermal",
+    "turbulence"
+  ],
+  "development_categories": [
+    "badWeather",
+    "baseline",
+    "dynamicBackground",
+    "nightVideos",
+    "shadow"
+  ],
+  "overlap_sequences": 0,
+  "confirmatory_parameter_source": "protocol/frozen_v2_params.json",
+  "v3_frozen_tuned_params": {
+    "frame_diff": {
+      "fixed_thr": 5
+    },
+    "mog2": {
+      "var_threshold": 25
+    },
+    "knn": {
+      "dist2_threshold": 600.0
+    },
+    "farneback": {
+      "flow_thr": 1.0
+    }
+  },
+  "source_sha256": {
+    "confirmatory/all_per_seq.csv": "b2f7d70702499cf3c97f037b754dd4b82f499ff1b0815f345085ac334cf9bb23",
+    "confirmatory/run_info.json": "94aafcbf7321baf282181399ed87208f2a2d3a0c437860cb8093c296f6fb9fc0",
+    "confirmatory/table_hypotheses.csv": "08f847f193831b5692dca5b2d8b00188469234d8ac748dc78e4ea319ced8f084",
+    "confirmatory/table_by_category.csv": "fc2d6bcca38c11a08400260018207d13a01a4e198391e90c34e659f3fd3e5c10",
+    "development/all_per_seq.csv": "2875a2ec92605f8d27412d2c79cb0e09991b1f9e4e7be6af46f1f04f8bf2cb75",
+    "development/table_by_category.csv": "181802e4019804fe370c4715d7fe32c4a7f701d23fa20d62c68a3cbd9588c628",
+    "development/run_info.json": "a53c7a442e218624588a6c53b90046cce8068bbd7b610822ea0ad199fd55b802"
+  },
+  "generated_output_files": [
+    "REPORT_V4.md",
+    "fig_v4_category_heatmap.png",
+    "fig_v4_category_shift.png",
+    "fig_v4_fpr_fnr.png",
+    "fig_v4_tuned_minus_default.png",
+    "table_v4_category_profile.csv",
+    "table_v4_category_shift_descriptive.csv",
+    "table_v4_category_winners.csv",
+    "table_v4_default_vs_tuned_category.csv",
+    "table_v4_default_vs_tuned_sequences.csv",
+    "table_v4_frozen_v3_hypotheses.csv",
+    "table_v4_ranked_failure_cases.csv",
+    "table_v4_sequence_error_profiles.csv"
+  ]
+}
